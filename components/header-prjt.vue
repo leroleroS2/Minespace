@@ -12,7 +12,7 @@
             <nav class="main-nav">
                 
                 <figure>
-                    <a href="#" target="_blank"><img display="block" src="../imgs/mine.png" alt=""></a>
+                    <a href="#" target="_blank"><img display="block" src="../imgs/mine.png" alt="Home"></a>
                 </figure>
 
                 <div class="wrap">
@@ -66,11 +66,6 @@
             </nav>
         </container>
     </section>
-
-    <!-- Section com títulos coloridos pra cada botao no nav!!! -->
-    <!-- <section>
-
-    </section> -->
 </template>
 
 <style lang="scss" scoped>
