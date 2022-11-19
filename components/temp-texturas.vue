@@ -85,6 +85,10 @@
     .tt{
         padding: 120px 60px;
 
+        a{
+            text-decoration: none;
+        }
+
         h1{
             font-family: 'VT323', monospace;
         }

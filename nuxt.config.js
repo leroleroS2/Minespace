@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Projeto-teste',
+    title: 'Minespace',
     htmlAttrs: {
       lang: 'en'
     },
