@@ -1,17 +1,10 @@
 <template>
   <section>
-    <!-- <Tutorial/> -->
-    <farofa />
-    <farofa />
-    
+      <header-prjt />
+      <temp-texturas />
+      <temp-shaders />
   </section>
-
-
 </template>
-
-<style scoped>
-
-</style>
 
 <script>
 export default {
