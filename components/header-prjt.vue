@@ -89,13 +89,13 @@
 
             .searchTerm {
                 width: 100%;
-                border: 3px solid #282828;
+                border: 3px solid #ffffff;
                 border-right: none;
                 padding: 5px;
                 height: 55px;
                 border-radius: 5px 0 0 5px;
                 outline: none;
-                color: #282828;
+                color: #ffffff;
             }
 
             .searchTerm:focus{
@@ -105,7 +105,7 @@
             .searchButton {
                 width: 55px;
                 height: 55px;
-                border: 1px solid #282828;
+                border: 1px solid #ffffff;
                 background: url(../imgs/search.png);
                 text-align: center;
                 color: #fff;
@@ -145,6 +145,7 @@
             
 
             &__pags{
+                margin-top: 18px;
                 padding-right: 25px;
 
                 position: relative;

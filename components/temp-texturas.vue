@@ -1,10 +1,12 @@
 <template>
     <section class="tt">
         <container>
-            <div class="ttc">
-                <h1><a href="#" target="_blank" class="ttc">Texturas</a></h1>
-                <h5><a href="#" target="_blank" class="ttc2">Clique para ver mais</a></h5>
+            <a href="#" target="_blank" class="ttc2">
+                <div class="ttc">
+                <h1>Texturas</h1>
+                <h5>Clique para ver mais</h5>
             </div>
+            </a>
         </container>
 
         <br><br>

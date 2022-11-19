@@ -1,10 +1,12 @@
 <template>
     <section class="tt">
         <container>
-            <div class="ttc">
-                <h1><a href="#" target="_blank" class="ttc">Shaders</a></h1>
-                <h5><a href="#" target="_blank" class="ttc2">Clique para ver mais</a></h5>
+            <a href="#" target="_blank" class="ttc2">
+                <div class="ttc">
+                <h1>Shaders</h1>
+                <h5>Clique para ver mais</h5>
             </div>
+            </a>
         </container>
 
         <br><br>
@@ -91,7 +93,7 @@
         padding: 35px;
 
         color: white;
-        background-color: rgb(150, 127, 177);
+        background: url(../imgs/fundo-titulo-shader.png);
         text-align: center;
 
         text-decoration: none;
