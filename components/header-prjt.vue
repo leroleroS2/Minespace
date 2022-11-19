@@ -80,10 +80,10 @@
         padding: 15px 25px;
         max-width: 100%;
         overflow: hidden;
-        background-color: #4b4a4a;
+        background: url(../imgs/fundo-header.png);
 
         .search {
-            width: 500px;
+            width: 600px;
             position: relative;
             display: flex;
 
@@ -92,7 +92,7 @@
                 border: 3px solid #282828;
                 border-right: none;
                 padding: 5px;
-                height: 36px;
+                height: 55px;
                 border-radius: 5px 0 0 5px;
                 outline: none;
                 color: #282828;
@@ -103,8 +103,8 @@
             }
 
             .searchButton {
-                width: 40px;
-                height: 36px;
+                width: 55px;
+                height: 55px;
                 border: 1px solid #282828;
                 background: url(../imgs/search.png);
                 text-align: center;

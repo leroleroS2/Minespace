@@ -2,7 +2,7 @@
     <section class="tt">
         <container>
             <div class="ttc">
-                <h1><a href="#" target="_blank" class="ttc">Texturas</a></h1>
+                <h1><a href="#" target="_blank" class="ttc">Shaders</a></h1>
                 <h5><a href="#" target="_blank" class="ttc2">Clique para ver mais</a></h5>
             </div>
         </container>
@@ -38,38 +38,38 @@
         <container class="cards">
             <div class="card-deck">
                 <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/textura1.jpeg" class="card-img-top" alt="" href="#"></a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/shader1.png" class="card-img-top" alt="" href="#"></a>
                     <div class="card-body">
                         <h5 class="card-title">
-                            <a href="#" target="_blank" class="links">LB Photo Realism Texture Pack</a>
+                            <a href="#" target="_blank" class="links">BSL Shaders</a>
                         </h5>
                         <p class="card-text">
                             Version: 1.19.2 <br>
-                            Categorias: <a href="#" target="_blank" class="cat">Textura</a> <a href="#" target="_blank" class="cat">Realista</a> <a href="#" target="_blank" class="cat">Pesada</a> <a href="#" target="_blank" class="cat">Detalhada</a>
+                            Categorias: <a href="#" target="_blank" class="cat">Shader</a> <a href="#" target="_blank" class="cat">Leve</a> <a href="#" target="_blank" class="cat">Realista</a>
                         </p>
                     </div>
                 </div>
                 <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/textura2.jpeg" class="card-img-top" alt=""></a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/shader2.png" class="card-img-top" alt=""></a>
                     <div class="card-body">
                         <h5 class="card-title">
-                            <a href="#" target="_blank" class="links">Synthwave PvP Texture Pack</a>
+                            <a href="#" target="_blank" class="links">Chocapic13's Shaders</a>
                         </h5>
                         <p class="card-text">
                             Version: 1.19.2 <br>
-                            Categorias: <a href="#" target="_blank" class="cat">Textura</a> <a href="#" target="_blank" class="cat">PvP</a> <a href="#" target="_blank" class="cat">+FPS</a> <a href="#" target="_blank" class="cat">Simples</a> <a href="#" target="_blank" class="cat">Leve</a>
+                            Categorias: <a href="#" target="_blank" class="cat">Shader</a> <a href="#" target="_blank" class="cat">Leve</a> <a href="#" target="_blank" class="cat">Realista</a>
                         </p>
                     </div>
                 </div>
                 <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/textura3.jpeg" class="card-img-top" alt=""></a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/shader3.png" class="card-img-top" alt=""></a>
                     <div class="card-body">
                         <h5 class="card-title">
-                            <a href="#" target="_blank" class="links">Modern Craft Texture Pack</a>
+                            <a href="#" target="_blank" class="links">Builders QOL Shaders</a>
                         </h5>
                         <p class="card-text">
                             Version: 1.19.2 <br>
-                            Categorias: <a href="#" target="_blank" class="cat">Textura</a>  <a href="#" target="_blank" class="cat">Construção</a> <a href="#" target="_blank" class="cat">Decoração</a> <a href="#" target="_blank" class="cat">Moderna</a> <a href="#" target="_blank" class="cat">Detalhada</a>
+                            Categorias: <a href="#" target="_blank" class="cat">Shader</a> <a href="#" target="_blank" class="cat">Leve</a> <a href="#" target="_blank" class="cat">Realista</a> 
                         </p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
 <style lang="scss" scoped >
 
     .tt{
-        padding: 120px 60px;
+        padding: 50px 60px;
 
         h1{
             font-family: 'VT323', monospace;
@@ -91,7 +91,7 @@
         padding: 35px;
 
         color: white;
-        background: url(../imgs/fundo-titulo-textura.png);
+        background-color: rgb(150, 127, 177);
         text-align: center;
 
         text-decoration: none;
