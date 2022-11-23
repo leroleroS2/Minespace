@@ -3,7 +3,7 @@
 
         <container class="logo">
             <div class="logo-minespace">
-                <img src="../imgs/minespace.png" alt="">
+                <img src="imgs/minespace.png" alt="">
             </div>
         </container>
 
@@ -12,7 +12,7 @@
             <nav class="main-nav">
                 
                 <figure>
-                    <a href="#" target="_blank"><img display="block" src="../imgs/mine.png" alt="Home"></a>
+                    <a href="#" target="_blank"><img display="block" src="imgs/mine.png" alt="Home"></a>
                 </figure>
 
                 <div class="wrap">
@@ -80,7 +80,8 @@
         padding: 15px 25px;
         max-width: 100%;
         overflow: hidden;
-        background: url(../imgs/fundo-header.png);
+        // background: url(./imgs/fundo-header.png);
+        background: url("../static/imgs/fundo-header.png");
 
         .search {
             width: 600px;
@@ -106,7 +107,7 @@
                 width: 55px;
                 height: 55px;
                 border: 1px solid #ffffff;
-                background: url(../imgs/search.png);
+                background: url("../static/imgs/search.png");
                 text-align: center;
                 color: #fff;
                 border-radius: 0 5px 5px 0;

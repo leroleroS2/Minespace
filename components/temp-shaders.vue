@@ -40,7 +40,7 @@
         <container class="cards">
             <div class="card-deck">
                 <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/shader1.png" class="card-img-top" alt="" href="#"></a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="imgs/shader1.png" class="card-img-top" alt="" href="#"></a>
                     <div class="card-body">
                         <h5 class="card-title">
                             <a href="#" target="_blank" class="links">BSL Shaders</a>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/shader2.png" class="card-img-top" alt=""></a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="imgs/shader2.png" class="card-img-top" alt=""></a>
                     <div class="card-body">
                         <h5 class="card-title">
                             <a href="#" target="_blank" class="links">Chocapic13's Shaders</a>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/shader3.png" class="card-img-top" alt=""></a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="imgs/shader3.png" class="card-img-top" alt=""></a>
                     <div class="card-body">
                         <h5 class="card-title">
                             <a href="#" target="_blank" class="links">Builders QOL Shaders</a>
@@ -83,7 +83,7 @@
 <style lang="scss" scoped >
 
     .tt{
-        padding: 50px 60px;
+        padding: 0 60px;
 
         a{
             text-decoration: none;
@@ -97,7 +97,8 @@
         padding: 35px;
 
         color: white;
-        background: url(../imgs/fundo-titulo-shader.png);
+        // background: url("../static/imgs/fundo-titulo-shader.png");
+        background: linear-gradient(180deg, #967fb1, #67577a);
         text-align: center;
 
         text-decoration: none;

@@ -11,28 +11,6 @@
 
         <br><br>
 
-        <!-- <container class="cards">
-            <div class="swiper"> -->
-            <!-- Additional required wrapper -->
-            <!-- <div class="swiper-wrapper"> -->
-                <!-- Slides -->
-                <!-- <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ... -->
-            <!-- </div> -->
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-
-            <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div>
-            </div>
-        </container> -->
-
         <container>
             <h1>- Mais populares : </h1><br>
         </container>
@@ -40,7 +18,7 @@
         <container class="cards">
             <div class="card-deck">
                 <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/textura1.jpeg" class="card-img-top" alt="" href="#"></a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="imgs/textura1.jpeg" class="card-img-top" alt="" href="#"></a>
                     <div class="card-body">
                         <h5 class="card-title">
                             <a href="#" target="_blank" class="links">LB Photo Realism Texture Pack</a>
@@ -52,7 +30,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/textura2.jpeg" class="card-img-top" alt=""></a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="imgs/textura2.jpeg" class="card-img-top" alt=""></a>
                     <div class="card-body">
                         <h5 class="card-title">
                             <a href="#" target="_blank" class="links">Synthwave PvP Texture Pack</a>
@@ -64,7 +42,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="../imgs/textura3.jpeg" class="card-img-top" alt=""></a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="imgs/textura3.jpeg" class="card-img-top" alt=""></a>
                     <div class="card-body">
                         <h5 class="card-title">
                             <a href="#" target="_blank" class="links">Modern Craft Texture Pack</a>
@@ -82,6 +60,9 @@
 
 <style lang="scss" scoped >
 
+    // :root{
+    //     --degrade:  #7f9eb1
+    // }
     .tt{
         padding: 120px 60px;
 
@@ -97,8 +78,10 @@
         padding: 35px;
 
         color: white;
-        background: url(../imgs/fundo-titulo-textura.png);
+        background: linear-gradient(180deg, #7f9eb1, #586d7a);
         text-align: center;
+
+        // url(../imgs/fundo-titulo-textura.png)
 
         text-decoration: none;
 
@@ -153,22 +136,32 @@
         font-size: 13px;
     }
 </style>
-<!-- 
+
 <script>
 
-  export default {
+    export default{
+    // data vai armazenar as variaveis e os karai a 4
+    data(){
+      return{
+        titulo : "Texturas"
+        
+      }
+    }
+  }
+
+//   export default {
   
-    setup() {
-      const onSwiper = (swiper) => {
-        console.log(swiper);
-      };
-      const onSlideChange = () => {
-        console.log('slide change');
-      };
-      return {
-        onSwiper,
-        onSlideChange,
-      };
-    },
-  };
-</script> -->
+//     setup() {
+//       const onSwiper = (swiper) => {
+//         console.log(swiper);
+//       };
+//       const onSlideChange = () => {
+//         console.log('slide change');
+//       };
+//       return {
+//         onSwiper,
+//         onSlideChange,
+//       };
+//     },
+//   };
+</script>
