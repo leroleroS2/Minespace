@@ -6,9 +6,14 @@
         <p>{{texto}}</p>
         <!-- <p>{{carro.nome}}</p>
         <img :src="carro.url" alt=""> -->
-        <p v-for="(item, index) in vestimenta" :key="index">
-            {{item}}
-        </p>
+        <div v-for="(item, index) in vestimenta" :key="index">
+            <div>
+                <h1>
+                    {{item}}
+                </h1>
+                <img v-if="item == 'bermuda' " src="imgs/mine.png" alt="">
+            </div>
+        </div>
         <div class="texto1" v-if="texto == 1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam alias illo at dolorum magni voluptates eveniet, nostrum harum ducimus animi similique quisquam temporibus reprehenderit sint minus aperiam culpa veritatis amet.
         </div>
@@ -38,11 +43,12 @@
 
 <script>
 
+
     export default{
         data(){
          return{
             texto : 3,
-            vestimenta : ["texto", "savio", "outra coisa", "isso"],
+            vestimenta : ["blusa", "sapato", "bermuda", "toca"],
             carro : { 
                 nome : "Carlos",
                 cor : "Amarelo",
@@ -55,7 +61,7 @@
         },
 
         mounted(){
-            // this.mostrarTerminal()
+            this.loop()
         },
 
         methods:{
@@ -67,7 +73,15 @@
                     this.texto = 1
                 }
             },
+            loop(){
+                for(let contador = 0; contador < this.vestimenta.length; contador = contador + 1) console.log(this.vestimenta[contador]);
+                    // this.vestimenta[2]
+                // this.vestimenta.forEach((item) => console.log(item))
+
+                // console.log(this.vestimenta);
+            }
       
         }
     }
+    
 </script>

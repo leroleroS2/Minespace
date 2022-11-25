@@ -12,7 +12,9 @@
             <nav class="main-nav">
                 
                 <figure>
-                    <a href="#" target="_blank"><img display="block" src="imgs/mine.png" alt="Home"></a>
+                    <nuxt-link to="/biomas_e_blocos">
+                        <img display="block" src="imgs/mine.png" alt="Home">
+                    </nuxt-link>
                 </figure>
 
                 <div class="wrap">
