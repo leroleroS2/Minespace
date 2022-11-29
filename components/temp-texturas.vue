@@ -1,60 +1,10 @@
 <template>
     <section class="tt">
-        <container>
-            <a href="#" target="_blank" class="ttc2">
-                <div class="ttc">
-                <h1>Texturas</h1>
-                <h5>Clique para ver mais</h5>
-            </div>
-            </a>
-        </container>
+        <titulo-temp :title="titulo"/>
 
         <br><br>
 
-        <container>
-            <h1>- Mais populares : </h1><br>
-        </container>
-
-        <container class="cards">
-            <div class="card-deck">
-                <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="imgs/textura1.jpeg" class="card-img-top" alt="" href="#"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="#" target="_blank" class="links">LB Photo Realism Texture Pack</a>
-                        </h5>
-                        <p class="card-text">
-                            Version: 1.19.2 <br>
-                            Categorias: <a href="#" target="_blank" class="cat">Textura</a> <a href="#" target="_blank" class="cat">Realista</a> <a href="#" target="_blank" class="cat">Pesada</a> <a href="#" target="_blank" class="cat">Detalhada</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="imgs/textura2.jpeg" class="card-img-top" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="#" target="_blank" class="links">Synthwave PvP Texture Pack</a>
-                        </h5>
-                        <p class="card-text">
-                            Version: 1.19.2 <br>
-                            Categorias: <a href="#" target="_blank" class="cat">Textura</a> <a href="#" target="_blank" class="cat">PvP</a> <a href="#" target="_blank" class="cat">+FPS</a> <a href="#" target="_blank" class="cat">Simples</a> <a href="#" target="_blank" class="cat">Leve</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#" target="_blank" style="text-decoration: none; color: black;"><img src="imgs/textura3.jpeg" class="card-img-top" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="#" target="_blank" class="links">Modern Craft Texture Pack</a>
-                        </h5>
-                        <p class="card-text">
-                            Version: 1.19.2 <br>
-                            Categorias: <a href="#" target="_blank" class="cat">Textura</a>  <a href="#" target="_blank" class="cat">Construção</a> <a href="#" target="_blank" class="cat">Decoração</a> <a href="#" target="_blank" class="cat">Moderna</a> <a href="#" target="_blank" class="cat">Detalhada</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </container>
+        <cards-texturas :title="titulo" :items="items"/>
     </section>
 </template>
 
@@ -64,7 +14,7 @@
     //     --degrade:  #7f9eb1
     // }
     .tt{
-        padding: 120px 60px;
+        padding: 50px 60px;
 
         a{
             text-decoration: none;
@@ -112,6 +62,10 @@
         }
     }
 
+    // .cards{
+    //     background-image: linear-gradient(to right, #ffffff, #f8f8f8, #f0f0f0, #e9e9e9, #e2e2e2, #e2e2e2, #e2e2e2, #e2e2e2, #e9e9e9, #f0f0f0, #f8f8f8, #ffffff);
+    // }
+
     .card{
         border-color: rgb(230, 230, 230);
 
@@ -142,9 +96,26 @@
     export default{
     // data vai armazenar as variaveis e os karai a 4
     data(){
-      return{
-        titulo : "Texturas"
-        
+        return{
+        titulo : "Texturas",
+        subtitulo : "Clique para ver mais",
+        items: [
+            {
+                title: "LB Photo Realism Texture Pack",
+                img: "imgs/textura1.jpeg",
+                tags: ['Textura', 'Pesada', 'Realista', 'Detalhada']
+            },
+            {
+                title: "Chocapic13's Shaders",
+                img: "imgs/textura2.jpeg",
+                tags: ['Textura', 'Leve', 'Simples', 'PvP', '+FPS']
+            },
+            {
+                title: "Builders QOL Shaders",
+                img: "imgs/textura3.jpeg",
+                tags: ['Textura', 'Realista', 'Construção', 'Moderna', 'Decoração',]
+            },
+        ]
       }
     }
   }

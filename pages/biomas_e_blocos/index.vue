@@ -2,11 +2,11 @@
     <section>
         <div>
             <div>
-                <figure v-for="(item, index) in bioblock[0]" :key="index" @click="gelatina = index">
+                <figure v-for="(item, index) in bioblock[0]" :key="index" @click="MostraImagem = index">
                     <img  :src="item" alt="">
                 </figure>
                 <div v-for="(item, index) in bioblock[1]" :key="index">
-                    <figure v-if="gelatina == index">
+                    <figure v-if="MostraImagem == index">
                         <img :src="item" alt="">
                     </figure>
                 </div>
@@ -26,7 +26,7 @@
                 blocos : ["imgs/Grass_Block.png", "imgs/Red_Sand.png", "imgs/Snow_Block.png" ,"imgs/Netherrack.png", "imgs/End_Stone.png"],
                 biomas : ["imgs/Plains.png", "imgs/Badlands.png", "imgs/Icy_Tundra.png", "imgs/Nether.png", "imgs/The_End.png"],
                 bioblock: [],
-                gelatina : 0
+                MostraImagem : 0
             }
         },
 

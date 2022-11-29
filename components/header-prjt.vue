@@ -28,41 +28,51 @@
 
                 <ul class="main-nav__pags">
                     <li class="main-nav__pagsbttn">
-                        <a href="#" target="_blank" class="main-nav__link">
+                        <nuxt-link class="main-nav__link" to="/aba-skins">
+                            Skins
+                        </nuxt-link>
+                    </li>
+                    <li class="main-nav__pagsbttn">
+                        <nuxt-link class="main-nav__link" to="/aba-texturas">
                             Texturas
                             <ul class="submenu" style="display: none;">
-                                <li>Mais Populares</li>
-                                <li>Mais Baixadas</li>
-                                <li>Realistas</li>
-                                <li>PvP (+FPS)</li>
-                                <li>Decoração Morderna</li>
+                                <li>
+                                    Mais Populares
+                                </li>
+                                <li>
+                                    Mais Baixadas
+                                </li>
+                                <li>
+                                    Realistas
+                                </li>
+                                <li>
+                                    PvP (+FPS)
+                                </li>
+                                <li>
+                                    Decoração Morderna
+                                </li>
                             </ul>
-                        </a>
+                        </nuxt-link>
                     </li>
                     <li class="main-nav__pagsbttn">
-                        <a href="#" target="_blank" class="main-nav__link">
+                        <nuxt-link class="main-nav__link" to="/aba-shaders">
                             Shaders
-                        </a>
+                        </nuxt-link>
                     </li>
                     <li class="main-nav__pagsbttn">
-                        <a href="#" target="_blank" class="main-nav__link">
+                        <nuxt-link class="main-nav__link" to="/aba-mods">
                             Mods
-                        </a>
+                        </nuxt-link>
                     </li>
                     <li class="main-nav__pagsbttn">
-                        <a href="#" target="_blank" class="main-nav__link">
+                        <nuxt-link class="main-nav__link" to="/aba-modpacks">
                             Mod Packs
-                        </a>
+                        </nuxt-link>
                     </li>
                     <li class="main-nav__pagsbttn">
-                        <a href="#" target="_blank" class="main-nav__link">
-                            Skins
-                        </a>
-                    </li>
-                    <li class="main-nav__pagsbttn">
-                        <a href="#" target="_blank" class="main-nav__link">
+                        <nuxt-link class="main-nav__link" to="/aba-capas">
                             Capas
-                        </a>
+                        </nuxt-link>
                     </li>
                 </ul>
             </nav>
