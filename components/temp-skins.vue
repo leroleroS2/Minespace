@@ -146,6 +146,12 @@
         text-decoration: none;
     }
   }
+
+  @media (max-width: 360px){
+    .slider-swiper{
+      display: none;
+    }
+  }
 </style>
 
 <script>

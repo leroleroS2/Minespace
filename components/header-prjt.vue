@@ -1,97 +1,143 @@
 <template>
     <section class="header-prjt">
 
-        <container class="logo">
-            <div class="logo-minespace">
-                <img src="imgs/minespace.png" alt="">
-            </div>
-        </container>
-
         <container class="header-prjt__cont">
 
-            <nav class="main-nav">
-                
-                <figure>
-                    <nuxt-link to="/biomas_e_blocos">
-                        <img display="block" src="imgs/mine.png" alt="Home">
-                    </nuxt-link>
-                </figure>
+            <div class="row">
+                <nav class="main-nav">
 
-                <div class="wrap">
-                    <div class="search">
-                        <input type="text" class="searchTerm" placeholder="Digite aqui...">
-                        <button type="submit" class="searchButton">
-                            <i class="fa fa-search"></i>
-                        </button>
+                    <div class="col-6 col-md-12">
+                        <div class="logo">
+                            <div class="logo__minespace">
+                                <img src="imgs/minespace.png" alt="" style="max-width: 50vw; width: 100%">
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <ul class="main-nav__pags">
-                    <li class="main-nav__pagsbttn">
-                        <nuxt-link class="main-nav__link" to="/aba-skins">
-                            Skins
-                        </nuxt-link>
-                    </li>
-                    <li class="main-nav__pagsbttn">
-                        <nuxt-link class="main-nav__link" to="/aba-texturas">
-                            Texturas
-                            <ul class="submenu" style="display: none;">
-                                <li>
-                                    Mais Populares
-                                </li>
-                                <li>
-                                    Mais Baixadas
-                                </li>
-                                <li>
-                                    Realistas
-                                </li>
-                                <li>
-                                    PvP (+FPS)
-                                </li>
-                                <li>
-                                    Decoração Morderna
-                                </li>
-                            </ul>
-                        </nuxt-link>
-                    </li>
-                    <li class="main-nav__pagsbttn">
-                        <nuxt-link class="main-nav__link" to="/aba-shaders">
-                            Shaders
-                        </nuxt-link>
-                    </li>
-                    <li class="main-nav__pagsbttn">
-                        <nuxt-link class="main-nav__link" to="/aba-mods">
-                            Mods
-                        </nuxt-link>
-                    </li>
-                    <li class="main-nav__pagsbttn">
-                        <nuxt-link class="main-nav__link" to="/aba-modpacks">
-                            Mod Packs
-                        </nuxt-link>
-                    </li>
-                    <li class="main-nav__pagsbttn">
-                        <nuxt-link class="main-nav__link" to="/aba-capas">
-                            Capas
-                        </nuxt-link>
-                    </li>
-                </ul>
-            </nav>
+                    <div class="col-6 col-md-6">
+                        <figure>
+                            <nuxt-link to="/biomas_e_blocos">
+                                <img class="bloco" display="block" src="imgs/mine.png" alt="Home">
+                            </nuxt-link>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="wrap">
+                            <div class="search">
+                                <input type="text" class="searchTerm" placeholder="Digite aqui...">
+                                <button type="submit" class="searchButton">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="main-nav__pags">
+                        <li class="main-nav__pagsbttn">
+                            <nuxt-link class="main-nav__link" to="/aba-skins">
+                                Skins
+                            </nuxt-link>
+                        </li>
+                        <li class="main-nav__pagsbttn subcategorias-div">
+                            <nuxt-link class="main-nav__link" to="/aba-texturas">
+                                Texturas
+                                <div class="baixou">
+                                    <ul class="submenu">
+                                        <li class="subcategorias">
+                                            <nuxt-link class="sublinks" to="/aba-texturas">
+                                                Mais Populares
+                                            </nuxt-link>
+                                        </li>
+                                        <li class="subcategorias">
+                                            <nuxt-link class="sublinks" to="/aba-texturas">
+                                                Mais Baixadas
+                                            </nuxt-link>
+                                        </li>
+                                        <li class="subcategorias">
+                                            <nuxt-link class="sublinks" to="/aba-texturas">
+                                                Realistas
+                                            </nuxt-link>
+                                        </li>
+                                        <li class="subcategorias">
+                                            <nuxt-link class="sublinks" to="/aba-texturas">
+                                                PvP (+FPS)
+                                            </nuxt-link>
+                                        </li>
+                                        <li class="subcategorias">
+                                            <nuxt-link class="sublinks" to="/aba-texturas">
+                                                Decoração Morderna
+                                            </nuxt-link>
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </nuxt-link>
+                        </li>
+                        <li class="main-nav__pagsbttn">
+                            <nuxt-link class="main-nav__link" to="/aba-shaders">
+                                Shaders
+                            </nuxt-link>
+                        </li>
+                        <li class="main-nav__pagsbttn">
+                            <nuxt-link class="main-nav__link" to="/aba-mods">
+                                Mods
+                                <div class="baixou">
+                                    <ul class="submenu">
+                                        <li class="subcategorias">
+                                            <nuxt-link class="sublinks" to="/aba-texturas">
+                                                Mais Populares
+                                            </nuxt-link>
+                                        </li>
+                                        <li class="subcategorias">
+                                            <nuxt-link class="sublinks" to="/aba-texturas">
+                                                Mais Baixados
+                                            </nuxt-link>
+                                        </li>
+                                        <li class="subcategorias">
+                                            <nuxt-link class="sublinks" to="/aba-texturas">
+                                                Construção
+                                            </nuxt-link>
+                                        </li>
+                                        <li class="subcategorias">
+                                            <nuxt-link class="sublinks" to="/aba-texturas">
+                                                PvP (+FPS)
+                                            </nuxt-link>
+                                        </li>
+                                        <li class="subcategorias">
+                                            <nuxt-link class="sublinks" to="/aba-texturas">
+                                                Decoração Morderna
+                                            </nuxt-link>
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </nuxt-link>
+                        </li>
+                        <li class="main-nav__pagsbttn">
+                            <nuxt-link class="main-nav__link" to="/aba-modpacks">
+                                Mod Packs
+                            </nuxt-link>
+                        </li>
+                        <li class="main-nav__pagsbttn">
+                            <nuxt-link class="main-nav__link" to="/sliderr">
+                                Capas
+                            </nuxt-link>
+                        </li>
+                    </ul>
+                    </nav>
+            </div>
+
+           
         </container>
     </section>
 </template>
 
 <style lang="scss" scoped>
 
-    .logo{
-        .logo-minespace{
-            text-align: center;
-        }
-    }
-
     .header-prjt{
+        
         padding: 15px 25px;
         max-width: 100%;
-        overflow: hidden;
+        // overflow: hidden;
         // background: url(./imgs/fundo-header.png);
         background: url("../static/imgs/fundo-header.png");
 
@@ -138,7 +184,7 @@
         }
 
         &__cont{
-        display: flex;
+        // display: flex;
 
         }
 
@@ -170,14 +216,14 @@
                 list-style: none;
 
                 background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
-	            image-rendering: pixelated;
+                image-rendering: pixelated;
                 border: 2px solid #000;
 
                 &:hover .title {
                     background-color: rgba(100, 100, 255, .45);
                     text-shadow: 2px 2px #202013CC;
                     color: #FFFFA0;
-	            }
+                }
 
                 &:active .title {
                     box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
@@ -234,9 +280,77 @@
                 }
             }
         }
+    }
+    .subcategorias-div{
+        position: relative;
 
-        
+        &:hover .baixou{
+            display: block;
+        }
     }
 
+    .baixou{
+        position: absolute;
+        height: 350%;
+        width: 150%;
+        top: 100%;
+        left: -25%;
+        background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
+	    image-rendering: pixelated;
+        border: 2px solid #000;
+        display: none;
+    }
+
+    .submenu{
+        font-size: 24px;
+        list-style: none;
+        padding: 0 5px;
+    }
+
+    .sublinks{
+        color: white;
+    }
+
+    .logo{
+        &__minespace{
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .header-prjt{
+            display: flex;
+            flex-direction: row-reverse;
+            .search{
+                flex-direction: column;
+                width: 320px;
+                
+
+                .searchTerm{
+                    display: none;
+                }
+
+                // .searchButton{
+                // }
+            }
+
+            .main-nav{
+                flex-direction: column;
+                &__pags{
+                    display: none;
+                }
+            } 
+        } 
+        
+        .logo{
+            &__minespace{
+                // display: none;
+                width: 100px;
+            }
+        }
+        .bloco{
+            width: 70px;
+        }
+    }
     
 </style>

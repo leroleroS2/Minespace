@@ -1,14 +1,14 @@
 <template>
     <section class="tt">
-        <titulo-temp :title="titulo"/>
-
+        <titulo-temp :title="titulo" class="fundotitulo" :cores="ata"/>
+        
         <br><br>
 
         <cards-texturas :title="titulo" :items="items"/>
     </section>
 </template>
 
-<style lang="scss" scoped >
+<style lang="scss" scoped>
 
     // :root{
     //     --degrade:  #7f9eb1
@@ -28,7 +28,7 @@
         padding: 35px;
 
         color: white;
-        background: linear-gradient(180deg, #7f9eb1, #586d7a);
+        // background: linear-gradient(180deg, #7f9eb1, #586d7a);
         text-align: center;
 
         // url(../imgs/fundo-titulo-textura.png)
@@ -95,30 +95,31 @@
 
     export default{
     // data vai armazenar as variaveis e os karai a 4
-    data(){
-        return{
-        titulo : "Texturas",
-        subtitulo : "Clique para ver mais",
-        items: [
-            {
-                title: "LB Photo Realism Texture Pack",
-                img: "imgs/textura1.jpeg",
-                tags: ['Textura', 'Pesada', 'Realista', 'Detalhada']
-            },
-            {
-                title: "Chocapic13's Shaders",
-                img: "imgs/textura2.jpeg",
-                tags: ['Textura', 'Leve', 'Simples', 'PvP', '+FPS']
-            },
-            {
-                title: "Builders QOL Shaders",
-                img: "imgs/textura3.jpeg",
-                tags: ['Textura', 'Realista', 'Construção', 'Moderna', 'Decoração',]
-            },
-        ]
-      }
+        data(){
+            return{
+                titulo : "Texturas",
+                subtitulo : "Clique para ver mais",
+                ata : ['#7f9eb1', '#586d7a'],
+                items: [
+                    {
+                        title: "LB Photo Realism Texture Pack",
+                        img: "imgs/textura1.jpeg",
+                        tags: ['Textura', 'Pesada', 'Realista', 'Detalhada']
+                    },
+                    {
+                        title: "Chocapic13's Shaders",
+                        img: "imgs/textura2.jpeg",
+                        tags: ['Textura', 'Leve', 'Simples', 'PvP', '+FPS']
+                    },
+                    {
+                        title: "Builders QOL Shaders",
+                        img: "imgs/textura3.jpeg",
+                        tags: ['Textura', 'Realista', 'Construção', 'Moderna', 'Decoração',]
+                    },
+                        ]
+            }
+        }
     }
-  }
 
 //   export default {
   

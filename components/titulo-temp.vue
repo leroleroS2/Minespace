@@ -1,8 +1,8 @@
 <template>
     <section>
         <container>
-            <a href="#" target="_blank" class="ttc2">
-                <div class="ttc">
+            <a href="#" target="_blank" class="ttc2" >
+                <div class="ttc" :style="{'background': fundo}">
                 <h1>{{title}}</h1>
                 <h5>{{subtitulo}}</h5>
             </div>
@@ -31,7 +31,7 @@
         padding: 35px;
 
         color: white;
-        background: linear-gradient(180deg, #7f9eb1, #586d7a);
+        // background: linear-gradient(180deg, #7f9eb1, #586d7a);
         text-align: center;
 
         // url(../imgs/fundo-titulo-textura.png)
@@ -72,14 +72,33 @@
     data(){
         return{
             titulo : "Texturas",
-            subtitulo : "Clique para ver mais"
+            subtitulo : "Clique para ver mais",
+            fundo : ""
       }
     },
 
+    mounted(){
+        this.getcolors()
+    },
+
     props: {
+        cores: {
+            type: Array,
+            default: ["#7fb19a", "#587a6a"]
+        },
+
         title: {
             type: String,
             default: "texto"
+        }
+    },
+    
+
+    methods:{
+        getcolors(){
+            let farofa = this.cores.join(', ');
+
+            this.fundo = "linear-gradient(180deg, " + farofa + " )"
         }
     }
   }

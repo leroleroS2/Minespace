@@ -1,7 +1,7 @@
 <template>
   <section>
       <header-prjt />
-      <swiper />
+      <temp-skins />
       <temp-texturas />
       <temp-shaders />
   </section>
