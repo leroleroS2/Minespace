@@ -3,26 +3,26 @@
 
         <container class="header-prjt__cont">
 
-            <div class="row">
-                <nav class="main-nav">
+            <div>
+                <nav class="main-nav row">
 
                     <div class="col-6 col-md-12">
                         <div class="logo">
                             <div class="logo__minespace">
-                                <img src="imgs/minespace.png" alt="" style="max-width: 50vw; width: 100%">
+                                <img src="imgs/minespace.png" alt="" style="max-width: 486px; width: 100%">
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-6">
+                    <div class="col-6 col-md-1">
                         <figure>
                             <nuxt-link to="/biomas_e_blocos">
-                                <img class="bloco" display="block" src="imgs/mine.png" alt="Home">
+                                <img class="bloco" display="block" src="imgs/mine.png" alt="Home" style="width: 100%">
                             </nuxt-link>
                         </figure>
                     </div>
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-4">
                         <div class="wrap">
                             <div class="search">
                                 <input type="text" class="searchTerm" placeholder="Digite aqui...">
@@ -33,7 +33,7 @@
                         </div>
                     </div>
 
-                    <ul class="main-nav__pags">
+                    <ul class="main-nav__pags col-lg-6">
                         <li class="main-nav__pagsbttn">
                             <nuxt-link class="main-nav__link" to="/aba-skins">
                                 Skins
@@ -139,10 +139,11 @@
         max-width: 100%;
         // overflow: hidden;
         // background: url(./imgs/fundo-header.png);
-        background: url("../static/imgs/fundo-header.png");
+        // background: url("../static/imgs/fundo-header.png");
+        background: linear-gradient(180deg, #1f1f1f, #454545);
 
         .search {
-            width: 600px;
+            max-width: 600px;
             position: relative;
             display: flex;
 
@@ -243,16 +244,14 @@
             }
 
             &__link{
-                padding: 5px 25px;
-
+                padding: 5px 15px;
                 cursor: pointer;
                 text-transform: uppercase;
                 text-decoration: none;
-                font-size: 28px;
-                color: #000000; 
-                font-family: 'VT323', monospace;
+                font-size: 18px;
+                color: #000000;
+                font-family: "VT323", monospace;
                 letter-spacing: 1.1px;
-
                 position: relative;
                 display: block;
                 transition: 0.5s;
@@ -334,12 +333,7 @@
                 // }
             }
 
-            .main-nav{
-                flex-direction: column;
-                &__pags{
-                    display: none;
-                }
-            } 
+          
         } 
         
         .logo{
@@ -350,6 +344,26 @@
         }
         .bloco{
             width: 70px;
+        }
+    }
+
+    @media (max-width: 768px){
+            .main-nav{
+                flex-direction: column;
+
+                &__pags{
+                    display: none!important;
+                }
+            } 
+        }
+
+    @media (min-width: 1600px){
+        .main-nav{
+            .main-nav__link{
+                padding: 5px 25px;
+                font-size: 20px;
+            
+            }
         }
     }
     

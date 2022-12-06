@@ -7,7 +7,7 @@
     <container>
       <div class="fundo">
         <div class="cont-slider">
-          <div style="overflow: hidden; position: relative;text-align: center; width: 1000px;">
+          <div style="overflow: hidden; position: relative;text-align: center; max-width: 1000px;">
               <div class="slider-swiper">
               <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -89,7 +89,7 @@
     // background-color: linear-gradient(180deg #ffffff, #000000, #ffffff);
   }
   .slider-swiper, .swiper-scrollbar, .swiper-pagination {
-    width: 1000px;
+    max-width: 1000px;
     margin-bottom: 15px;
   }
 
